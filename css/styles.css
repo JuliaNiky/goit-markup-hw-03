@@ -1,0 +1,341 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1,2;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+} 
+/*--------------------*/
+
+/*colors
+black #000000;
+blue #2196F3;
+nav text, h2, h3 #212121;
+link #757575;
+link hover, active #2196F3;
+h1 #FFFFFF;
+section text #757575;
+address #ffffff;
+contacts rgba(255, 255, 255, 0.6);
+bg light #F5F4FA;
+bg dark background: #2F303A;
+*/
+
+:root {
+    --accent-color: #2196F3;
+    --primary-title-color: #212121;
+    --primary-text-color: #757575;
+    --text-dark-background: #fff;
+    --dark-color: #000;
+    --dark-background: #2F303A;
+    --light-background: #F5F4FA;
+    --default-background: #fff;
+}
+
+body {
+    position: relative;
+    /*height: 2346px;*/
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background-color: var(--default-background);
+}
+
+/* Header */
+header {
+    padding: 24px 215px;
+    /*width: 1600px;
+    height: 80px;*/
+}
+
+a.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    color: var(--accent-color);
+}
+
+.black {
+    color: var(--dark-color);
+}
+
+.list-item {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
+}
+
+.nav-list .list-item.current {
+    color: var(--accent-color);
+}
+.contacts-item {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.list-item:hover, .contacts-item:hover {
+    color: var(--accent-color);
+}
+
+.list-item:focus,
+.contacts-item:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+    height: 600px;
+    align-items: center;
+    background-color: var(--dark-background);
+}
+
+.hero-title {
+    padding-top: 200px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-dark-background);
+}
+
+button.cta {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 216px;
+    height: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--text-dark-background);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* advantages */
+.section{
+    margin-top: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+
+.advantages-subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+}
+
+.advantages-text {
+    width: 270px;
+    line-height: 1.7;
+    color: var(--primary-text-color);
+}
+
+/* services */
+.section-list {
+    margin-bottom: 94px;
+}
+
+/* team */
+.team {
+    /*height: 648px;*/
+    padding: 94px 0;
+    background-color: var(--light-background);
+}
+
+.team-item {
+    width: 270px;
+    height: 368px;
+    background-color: var(--default-background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-subtitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+
+.team-text {
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+/* footer */
+footer {
+    height: 252px;
+    padding: 60px 0;
+    background-color: var(--dark-background);
+}
+
+.white {
+    color: var(--text-dark-background);
+}
+
+.address {
+    line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text-dark-background);
+}
+.address-item:hover, .address-item:focus {
+    color: var(--accent-color);
+}
+
+.email, .phone {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio */
+.portfolio {
+    margin: 94px 0;
+}
+
+.portfolio-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+}
+
+button.tab {
+    /*margin-bottom: 50px;*/
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--primary-title-color);
+    border-radius: 4px;
+}
+
+button.tab:hover, button.tab:focus {
+    color: var(--text-dark-background);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+button.all {
+    width: 73px;
+}
+
+button.web {
+    width: 125px;
+}
+
+button.app {
+    width: 112px;
+}
+
+button.design {
+    width: 103px;
+}
+
+button.marketing {
+    width: 130px;
+}
+
+.project-items {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    background-color: var(--default-background);
+    border: 1px solid #eee;
+}
+
+.project-title {
+    padding: 20px 24px 4px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-title-color);
+}
+
+.project-filter {
+    padding: 0px 24px 20px 24px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--primary-text-color);
+}
