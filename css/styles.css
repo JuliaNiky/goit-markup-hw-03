@@ -119,7 +119,7 @@ a.logo {
     color: var(--primary-title-color);
 }
 
-.nav-list .list-item.current {
+.active .list-item.current a {
     color: var(--accent-color);
 }
 .contacts-item {
@@ -185,6 +185,18 @@ button.cta {
     font-size: 36px;
     text-align: center;
     color: var(--primary-title-color);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .advantages-subtitle {
@@ -339,3 +351,5 @@ button.marketing {
     line-height: 1.9;
     color: var(--primary-text-color);
 }
+
+
