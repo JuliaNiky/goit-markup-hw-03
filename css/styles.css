@@ -137,7 +137,10 @@ body {
 
 .section-list {
     display: flex;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    }
 /*
 .list-item {
     margin-right: 30px;
@@ -279,8 +282,11 @@ section.advantages {
     margin: -1px;
 }
 
-.advantages-list {
-    width: calc(100% - 3*30px)/4;
+.section-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .advantages-subtitle {
