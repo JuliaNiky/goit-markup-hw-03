@@ -13,7 +13,7 @@
 
 body {
     font-size: 14px;
-    line-height: 1, 2;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     font-style: normal;
 }
@@ -139,14 +139,14 @@ body {
 .section-list {
     display: flex;
 }
-
+/*
 .list-item {
     margin-right: 30px;
 }
 
 .list-item:last-child {
     margin-right: 0;
-}
+}*/
 
 /* Header */
 .header {
@@ -278,6 +278,10 @@ section.advantages {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.advantages-list {
+    width: calc(100% - 3*30px)/4;
 }
 
 .advantages-subtitle {
