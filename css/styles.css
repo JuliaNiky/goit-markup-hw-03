@@ -218,8 +218,8 @@ a.logo {
 /* Hero */
 .hero {
     max-height: 600px;
+    margin: 0 auto;
     padding: 200px 0;
-    align-items: center;
     background-color: var(--dark-background);
 }
 
